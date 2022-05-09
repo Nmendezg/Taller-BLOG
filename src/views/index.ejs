@@ -1,0 +1,23 @@
+<%- include("__header.ejs") %>
+
+    <div>
+        <h1>
+            <%= titulo%>
+        </h1>
+    </div>
+
+    <% for (var i=0; i<entradas.length;i++){ %>
+        <div style="background-color:rgb(153, 81, 153); border: 2px solid;">
+            <img height="100px" width="100px" src=<%= entradas[i].imagen %> alt="" >
+            <h4>
+                <%= entradas[i].titulo %>
+            </h4>
+            <a href="/ver/<%= entradas[i]._id %>">Ver Entrada</a>
+            <a href="/modificar/<%= entradas[i]._id %>">Modificar Entrada</a>
+
+        </div>
+        <br><hr><br>
+        <% } %>
+            </body>
+
+            </html>

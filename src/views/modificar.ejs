@@ -1,0 +1,13 @@
+<%- include("__header.ejs") %>
+
+<div>
+    <form action="/modificar/<%= id%>" method="POST">
+        <input type="text" name="titulo" id="" placeholder="Título de la entrada" value=<%= titulo %>><br>
+        <input type="text" name="autor" id=""placeholder="Autor de la entrada" value=<%= autor %>><br>
+        <input type="text" name="imagen" placeholder="URL para cargar Imagen" value=<%= imagen %>><br>
+        <textarea name="contenido" id="" cols="30" rows="10" placeholder="Contenido de la entrada"><%= contenido %></textarea><br>
+        <button type="submit">Modificar Entrada</button>
+        <button><a href="/eliminar/<%= id%>">Eliminar Entrada</a></button>
+
+    </form>
+</div>

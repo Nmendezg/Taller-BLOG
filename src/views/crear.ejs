@@ -1,0 +1,14 @@
+<%- include( "__header.ejs") %>
+
+
+
+<div>
+    <form action="/entrada" method="POST">
+        <input type="text" name="titulo" id="" placeholder="Título de la entrada"><br>
+        <input type="text" name="autor" id=""placeholder="Autor de la entrada"><br>
+        <input type="text" name="imagen" placeholder="URL para cargar Imagen"><br>
+        <textarea name="contenido" id="" cols="30" rows="10" placeholder="Contenido de la entrada"></textarea><br>
+        <button type="submit">Guardar Entrada</button>
+
+    </form>
+</div>
